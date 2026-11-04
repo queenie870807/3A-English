@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三年级英语资料库 · 3A</title>
+<style>
+:root{
+  --bg:#f5f7fb; --card:#fff; --ink:#2b3a4a; --muted:#7a8a9a;
+  --blue:#4a90d9; --indigo:#5b6fd6; --green:#3fb27f; --purple:#9b6fd0;
+  --teal:#2bb3a3; --orange:#f0a049; --line:#e6ecf3;
+  --ans:#2f8f6b; --noans:#9a7b3a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;padding:10px 12px 24px}
+.wrap{max-width:1000px;margin:0 auto}
+header{text-align:center;padding:2px 0 6px}
+h1{font-size:19px;font-weight:700;letter-spacing:1px}
+.sub{color:var(--muted);font-size:12px;margin-top:2px}
+.nav{position:sticky;top:0;z-index:20;background:rgba(245,247,251,.97);backdrop-filter:blur(6px);display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;padding:8px 2px;margin:4px 0 2px;border-bottom:1px solid var(--line)}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;font-size:12.5px;font-weight:600;color:var(--ink);background:#fff;border:1px solid var(--line);padding:6px 12px;border-radius:18px;text-decoration:none;white-space:nowrap}
+.nav a:active,.nav a:hover{border-color:var(--blue);color:var(--blue)}
+.module{margin-top:14px;scroll-margin-top:50px}
+.module-title{display:flex;align-items:center;gap:8px;font-size:14.5px;font-weight:700;margin-bottom:2px}
+.module-title .bar{width:4px;height:16px;border-radius:3px}
+.module-title .tag{font-size:11px;font-weight:600;color:var(--muted)!important;background:#eef2f7!important;padding:1px 8px;border-radius:14px}
+.list{background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 1px 8px rgba(40,60,90,.05)}
+.row{display:flex;align-items:center;gap:8px;padding:9px 12px;border-top:1px solid var(--line)}
+.row:first-child{border-top:none}
+.row .name{font-size:14px;font-weight:500;flex:1 1 auto;min-width:0}
+.row .name .em{color:var(--muted);font-size:11.5px;font-weight:400;margin-left:4px}
+.chip{font-size:11px;padding:1px 7px;border-radius:10px;white-space:nowrap;flex:0 0 auto}
+.chip.photo{color:var(--muted);background:#eef2f7}
+.chip.noans{color:var(--muted);background:#eef2f7}
+.acts{display:flex;gap:6px;flex:0 0 auto}
+.btn{font-size:12.5px;border:1px solid var(--line);background:transparent;color:var(--ink);padding:5px 11px;min-width:70px;border-radius:8px;text-decoration:none;text-align:center}
+.btn:hover{border-color:var(--blue);color:var(--blue)}
+.btn.primary{border-color:var(--line);color:var(--ink);background:transparent}
+.btn.primary:hover{border-color:var(--blue);color:var(--blue)}
+footer{text-align:center;color:var(--muted);font-size:11.5px;margin-top:22px}
+@media(max-width:640px){
+  body{padding:6px 8px 18px}
+  header{padding:0 0 3px}
+  h1{font-size:17px}
+  .sub{font-size:10.5px;margin-top:1px}
+  .nav{gap:5px;padding:6px 1px;margin:3px 0 2px}
+  .nav a{font-size:11.5px;padding:5px 10px}
+  .module{margin-top:9px;scroll-margin-top:42px}
+  .module-title{font-size:13px;flex-wrap:wrap;gap:5px;margin-bottom:1px}
+  .module-title .bar{height:14px}
+  .module-title .tag{font-size:10px;padding:1px 6px}
+  .row{flex-wrap:wrap;align-items:center;gap:4px 6px;padding:7px 10px}
+  .row .name{font-size:13.5px;flex:1 1 auto;min-width:110px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .chip{font-size:10px;padding:1px 6px}
+  .acts{flex:0 0 auto;flex-wrap:nowrap;gap:6px}
+  .btn{flex:0 0 auto;min-width:62px;min-height:36px;display:inline-flex;align-items:center;justify-content:center;padding:6px 8px;font-size:12.5px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>三年级英语资料库</h1>
+    <div class="sub">3A 上册 · 空白卷 / 答案卷 / 听力，点按钮即可查看</div>
+  </header>
+
+  <nav class="nav">
+    <a href="#exercise">Exercise</a>
+    <a href="#wp">Written Practice</a>
+    <a href="#up">UpEnglish</a>
+    <a href="#mid">单项模拟</a>
+    <a href="#writing">Writing</a>
+    <a href="#reading">Reading</a>
+  </nav>
+
+  <!-- Exercise -->
+  <section class="module" id="exercise">
+    <div class="module-title"><span class="bar" style="background:var(--blue)"></span>Exercise 练习卷 <span class="tag" style="background:var(--blue)">2 份</span></div>
+    <div class="list">
+      <div class="row">
+        <div class="name">Exercise 1（3A）<span class="em">照片版</span></div>
+        <span class="chip photo">照片版</span>
+        <div class="acts">
+          <a class="btn primary" href="viewer.html?src=练习卷/3A_练习卷_Exercise1_照片.pdf">预览</a>
+          <a class="btn" href="viewer.html?src=练习卷/3A_练习卷_Exercise1_照片.pdf&answer=练习卷/3A_练习卷_Exercise1_答案.pdf">答案</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="name">Exercise 2（3A）</div>
+        <div class="acts">
+          <a class="btn primary" href="viewer.html?src=练习卷/3A_练习卷_Exercise2.pdf">预览</a>
+          <a class="btn" href="viewer.html?src=练习卷/3A_练习卷_Exercise2.pdf&answer=练习卷/3A_练习卷_Exercise2_已批改.pdf">答案</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Written Practice -->
+  <section class="module" id="wp">
+    <div class="module-title"><span class="bar" style="background:var(--indigo)"></span>Written Practice 笔试 <span class="tag" style="background:var(--indigo)">2 份 + 听力</span></div>
+    <div class="list">
+      <div class="row">
+        <div class="name">Written Practice 1（3A）<span class="em">照片版</span></div>
+        <span class="chip photo">照片版</span>
+        <div class="acts">
+          <a class="btn" href="viewer.html?src=笔试卷/3A_笔试卷_WrittenPractice1_照片.pdf">空白卷</a>
+          <a class="btn primary" href="viewer.html?src=笔试卷/3A_笔试卷_WrittenPractice1_照片.pdf&answer=笔试卷/3A_笔试卷_WrittenPractice1_已批改.pdf">答案卷</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="name">Written Practice 2（3A）</div>
+        <div class="acts">
+          <a class="btn" href="viewer.html?src=笔试卷/3A_笔试卷_WrittenPractice2.pdf">空白卷</a>
+          <a class="btn primary" href="viewer.html?src=笔试卷/3A_笔试卷_WrittenPractice2.pdf&answer=笔试卷/3A_笔试卷_WrittenPractice2_已批改.pdf">答案卷</a>
+          <a class="btn" href="viewer.html?src=笔试卷/3A_听力稿_WrittenPractice2.pdf">听力稿</a>
+          <a class="btn" href="viewer.html?src=笔试卷/3A_听力_WrittenPractice2.m4a">听力</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UpEnglish -->
+  <section class="module" id="up">
+    <div class="module-title"><span class="bar" style="background:var(--green)"></span>UpEnglish <span class="tag" style="background:var(--green)">3 份</span></div>
+    <div class="list">
+      <div class="row">
+        <div class="name">Up English 练习 2（3A）</div>
+        <div class="acts">
+          <a class="btn primary" href="viewer.html?src=练习卷/3A_UpEnglish_练习2.pdf">预览</a>
+          <a class="btn" href="viewer.html?src=练习卷/3A_UpEnglish_练习2.pdf&answer=练习卷/3A_UpEnglish_练习2_答案.pdf">答案</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="name">Up English 练习 3（3A）</div>
+        <div class="acts">
+          <a class="btn primary" href="viewer.html?src=练习卷/3A_UpEnglish_练习3.pdf">预览</a>
+          <a class="btn" href="viewer.html?src=练习卷/3A_UpEnglish_练习3.pdf&answer=练习卷/3A_UpEnglish_练习3_答案.pdf">答案</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="name">Up English 练习 4（3A）</div>
+        <div class="acts">
+          <a class="btn primary" href="viewer.html?src=练习卷/3A_UpEnglish_练习4.pdf">预览</a>
+          <a class="btn" href="viewer.html?src=练习卷/3A_UpEnglish_练习4.pdf&answer=练习卷/3A_UpEnglish_练习4_答案.pdf">答案</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 单项模拟 -->
+  <section class="module" id="mid">
+    <div class="module-title"><span class="bar" style="background:var(--purple)"></span>单项模拟（期中） <span class="tag" style="background:var(--purple)">3 套 + 听力</span></div>
+    <div class="list">
+      <div class="row">
+        <div class="name">期中单项模拟 1（3A）</div>
+        <span class="chip noans">无答案</span>
+        <div class="acts"><a class="btn primary" href="viewer.html?src=期中模拟/3A_期中模拟1.pdf">预览</a></div>
+      </div>
+      <div class="row">
+        <div class="name">期中单项模拟 2（3A）</div>
+        <div class="acts">
+          <a class="btn primary" href="viewer.html?src=期中模拟/3A_期中单项模拟2.pdf">预览</a>
+          <a class="btn" href="viewer.html?src=期中模拟/3A_期中单项模拟2.pdf&answer=期中模拟/3A_期中单项模拟2_答案.pdf">答案</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="name">期中单项模拟 3（3A）<span class="em">照片版</span></div>
+        <span class="chip photo">照片版</span>
+        <div class="acts">
+          <a class="btn" href="viewer.html?src=期中模拟/3A_期中模拟3_照片.pdf">空白卷</a>
+          <a class="btn primary" href="viewer.html?src=期中模拟/3A_期中模拟3_照片.pdf&answer=期中模拟/3A_期中模拟3_已批改.pdf">答案卷</a>
+          <a class="btn" href="viewer.html?src=期中模拟/3A_听力_期中模拟3.m4a">听力</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section class="module" id="writing">
+    <div class="module-title"><span class="bar" style="background:var(--orange)"></span>Writing 写作 <span class="tag" style="background:var(--orange)">1 篇</span></div>
+    <div class="list">
+      <div class="row">
+        <div class="name">Writing 2（3A）参考范文</div>
+        <div class="acts"><a class="btn primary" href="viewer.html?src=写作/3A_Writing2_参考范文.pdf">预览</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reading -->
+  <section class="module" id="reading">
+    <div class="module-title"><span class="bar" style="background:var(--teal)"></span>Reading 阅读 <span class="tag" style="background:var(--teal)">2 篇 + 绘本音频</span></div>
+    <div class="list">
+      <div class="row">
+        <div class="name">阅读 1（3A）</div>
+        <div class="acts"><a class="btn primary" href="viewer.html?src=阅读/3A_阅读1_B1U1-3-4_B2U1-S1.pdf">预览</a></div>
+      </div>
+      <div class="row">
+        <div class="name">阅读 2（3A）<span class="em">照片版</span></div>
+        <span class="chip photo">照片版</span>
+        <div class="acts"><a class="btn primary" href="viewer.html?src=阅读/3A_阅读2_照片.pdf">预览</a></div>
+      </div>
+      <div class="row">
+        <div class="name">Story 2（3A）音频</div>
+        <span class="chip photo">绘本音频</span>
+        <div class="acts"><a class="btn primary" href="viewer.html?src=音频/3A_Story2.mp3">播放</a></div>
+      </div>
+      <div class="row">
+        <div class="name">Chant 2（3A）音频</div>
+        <span class="chip photo">绘本音频</span>
+        <div class="acts"><a class="btn primary" href="viewer.html?src=音频/3A_Chant2.MP3">播放</a></div>
+      </div>
+      <div class="row">
+        <div class="name">Chant 3（3A）音频</div>
+        <span class="chip photo">绘本音频</span>
+        <div class="acts"><a class="btn primary" href="viewer.html?src=音频/3A_Chant3.MP3">播放</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>三年级英语资料库 · 3A 上册 · 纯本地 HTML</footer>
+</div>
+<script>
+/* 本地 file:// 打开时：PDF 无法在 iframe 内嵌，直接在新窗口打开文件（答案按钮直接开答案卷） */
+(function(){
+  if(location.protocol!=='file:') return;
+  var links=document.querySelectorAll('a.btn[href^="viewer.html"]');
+  for(var i=0;i<links.length;i++){
+    var a=links[i];
+    var q=new URL(a.getAttribute('href'), location.href).searchParams;
+    var target=q.get('answer')||q.get('src');
+    if(!target || /\.(mp3|m4a|wav|ogg)$/i.test(target)) continue; /* 音频仍走预览页播放 */
+    a.setAttribute('href', encodeURI(target));
+    a.setAttribute('target','_blank');
+    a.setAttribute('rel','noopener');
+  }
+})();
+</script>
+</body>
+</html>
